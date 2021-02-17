@@ -1,5 +1,11 @@
 version: 0.0
 os: linux
 files: 
-  - source: /
+  - source: /index.jsp
+    destination: /server/deploy-root/hbhan-tomcat/
+  - source: /db_conn.jsp
+    destination: /server/deploy-root/hbhan-tomcat/
+  - source: /healthcheck.html
+    destination: /server/deploy-root/hbhan-tomcat/
+  - source: /test.jsp
     destination: /server/deploy-root/hbhan-tomcat/
