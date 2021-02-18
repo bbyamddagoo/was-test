@@ -3,16 +3,9 @@ os: linux
 files: 
   - source: /index.jsp
     destination: /server/deploy-root/hbhan-tomcat/
-  #- source: /db_conn.jsp
-  #  destination: /server/deploy-root/hbhan-tomcat/
-  #- source: /healthcheck.html
-  #  destination: /server/deploy-root/hbhan-tomcat/
-  #- source: /test.jsp
-  #  destination: /server/deploy-root/hbhan-tomcat/
-#permissions:
-#  - object: /server/deploy-root/hbhan-tomcat/
-#    owner: tomcat
-#    group: tomcat
+  - source: /favicon.ico
+    destination: /server/deploy-root/hbhan-tomcat/
+    
 hooks:
   BeforeInstall:
     - location: scripts/BeforeInstall

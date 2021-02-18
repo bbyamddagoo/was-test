@@ -6,13 +6,18 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
-<%@ page import = "java.io.*,java.util.*" %>
+<%@page import="java.io.*,java.util.*"%>
+<%@page import="java.net.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
 <%
   Date nowTime = new Date();
   SimpleDateFormat sf = new SimpleDateFormat("yyyy년 MM월 dd일 a hh:mm:ss");
 %>
+<%
+  InetAddress inet= InetAddress.getLocalHost();
+%>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,7 +26,7 @@ pageEncoding="UTF-8"%>
   </head>
   <body>
     <br>-------------------------------------------------------------------<br>
-    <h1>Hyunbae HAN's 3-Tier Sample WAS v6</h1>
+    <h1>Hyunbae HAN's 3-Tier Sample WAS v7</h1>
     -------------------------------------------------------------------<br>
     Recent Time : <%= sf.format(nowTime) %>
     <br>-------------------------------------------------------------------<br>
@@ -52,6 +57,16 @@ pageEncoding="UTF-8"%>
     </td>
     <td>
       <%= session.getId() %>
+    </td>
+    <br>
+    <br>-------------------------------------------------------------------<br>
+    <h2>Server IP Check</h2>
+    -------------------------------------------------------------------<br>
+    <td>
+      Server Local IP : 
+    </td>
+    <td>
+      <%=inet.getHostAddress()%>
     </td>
   </body>
 </html>
