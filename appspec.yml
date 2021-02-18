@@ -16,5 +16,7 @@ permissions:
 hooks:
   BeforeInstall:
     - localtion: scripts/BeforeInstall.sh
+      runas: root
   AfterInstall:
     - localtion: scripts/AfterInstall.sh
+      runas: root
