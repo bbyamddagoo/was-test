@@ -17,11 +17,11 @@ pageEncoding="UTF-8"%>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Tomcat connection pool</title>
+    <title>WAS</title>
   </head>
   <body>
     <br>-------------------------------------------------------------------<br>
-    <h1>Hyunbae HAN's 3-Tier Sample WAS v5</h1>
+    <h1>Hyunbae HAN's 3-Tier Sample WAS v6</h1>
     -------------------------------------------------------------------<br>
     Recent Time : <%= sf.format(nowTime) %>
     <br>-------------------------------------------------------------------<br>
