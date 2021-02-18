@@ -15,10 +15,10 @@ files:
 #    group: tomcat
 hooks:
   BeforeInstall:
-    - localtion: scripts/BeforeInstall
+    - location: scripts/BeforeInstall
       timeout: 300
       runas: root
   AfterInstall:
-    - localtion: scripts/AfterInstall
+    - location: scripts/AfterInstall
       timeout: 300
       runas: root
