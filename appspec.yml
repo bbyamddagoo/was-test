@@ -9,10 +9,10 @@ files:
   #  destination: /server/deploy-root/hbhan-tomcat/
   #- source: /test.jsp
   #  destination: /server/deploy-root/hbhan-tomcat/
-permissions:
-  - object: /server/deploy-root/hbhan-tomcat/
-    owner: tomcat
-    group: tomcat
+#permissions:
+#  - object: /server/deploy-root/hbhan-tomcat/
+#    owner: tomcat
+#    group: tomcat
 hooks:
   BeforeInstall:
     - localtion: scripts/BeforeInstall.sh
