@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files: 
-  - source: /index.jsp
+  - source: /*.jsp
     destination: /server/deploy-root/hbhan-tomcat/
   - source: /favicon.ico
     destination: /server/deploy-root/hbhan-tomcat/
