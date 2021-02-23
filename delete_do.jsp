@@ -29,7 +29,7 @@
 
 		String sql = "DELETE FROM member WHERE idx=?";
 
-		PreparedStatement pstmt = con.prepareStatement(sql); // 쿼리를 이용해 delete 실행!!
+		PreparedStatement pstmt = con.prepareStatement(sql);
 		pstmt.setInt(1,Integer.parseInt(idx));
 		pstmt.executeUpdate();
 		pstmt.close();

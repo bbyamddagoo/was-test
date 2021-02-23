@@ -13,7 +13,7 @@
 <%
 	request.setCharacterEncoding("utf-8");
 	
-    String id = request.getParameter("id"); // input.jsp에서 입력받은 값들을 받아옵니다.
+    String id = request.getParameter("id"); 
 	String name = request.getParameter("name");
     String idx = request.getParameter("idx");
 
@@ -33,11 +33,9 @@
 		//String sql = "DELETE FROM member WHERE idx=?";
         String sql = "UPDATE member set id = ?, name = ? WHERE idx = ?";
 
-		PreparedStatement pstmt = con.prepareStatement(sql); // 쿼리를 이용해 delete 실행!!
+		PreparedStatement pstmt = con.prepareStatement(sql); 
 		pstmt.setString(1,id);
         pstmt.setString(2,name);
-        //pstmt.setString(3,idx);
-        //pstmt.setInt(3,idx);
         pstmt.setInt(3,Integer.parseInt(idx));
 
 		pstmt.executeUpdate();
