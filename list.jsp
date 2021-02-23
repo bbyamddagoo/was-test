@@ -31,14 +31,41 @@ try {
     String query = "SELECT idx, id, name FROM member"; 
     rs = stmt.executeQuery(query); 
 %>
+
+<style>
+  table {
+    width: 100%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+  }
+  th, td {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+    text-align: center;
+  }
+  thead tr {
+    background-color: #0d47a1;
+    color: #ffffff;
+  }
+  tbody tr:nth-child(2n) {
+    background-color: #bbdefb;
+  }
+  tbody tr:nth-child(2n+1) {
+    background-color: #e3f2fd;
+  }
+</style>
+
 <table border="1" cellspacing="0">
+  <thead>
     <tr>
-        <td>Number</td>
-        <td>ID</td>
-        <td>Name</td>
-        <TD>삭제</TD>
-        <TD>수정</TD>
+        <th>Number</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>삭제</th>
+        <th>수정</th>
     </tr>
+  </thead>
+
     <%
         while(rs.next()) {
     %>
