@@ -48,10 +48,10 @@ try {
         <td><%= rs.getString(3) %></td>
 
         <TD>
-            <A href="delete_do.jsp?idx=<%=rs.getInt("idx")%>">삭제</A> <!-- delete_do.jsp링크를 이용하여 해당 테이블의 데이터들을 삭제합니다. -->
+            <A href="delete_do.jsp?idx=<%=rs.getInt("idx")%>">삭제</A>
         </TD>
         <TD>
-            <A href="modify.jsp?idx=<%=rs.getInt("idx")%>">수정</A> <!-- delete_do.jsp링크를 이용하여 해당 테이블의 데이터들을 삭제합니다. -->
+            <A href="modify.jsp?idx=<%=rs.getInt("idx")%>">수정</A>
         </TD>
 
     </tr>
