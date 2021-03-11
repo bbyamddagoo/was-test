@@ -1,6 +1,11 @@
 <%@ page contentType="text/html;charset=utf-8" %>
 <HTML>
-<HEAD></HEAD>
+
+<head>
+    <meta charset="UTF-8">
+    <title>WAS</title>
+</head>
+
 <BODY>
     <FORM action="modify_do.jsp" method="post">
         Number : <INPUT type="text" name="idx" maxlength="8" size="8"><BR>
@@ -9,4 +14,5 @@
         <INPUT type="submit" value=" 저  장 ">
     </FORM>
 </BODY>
+
 </HTML>

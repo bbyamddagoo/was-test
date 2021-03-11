@@ -94,4 +94,15 @@ try {
       out.println("err:"+e.toString());
 } 
 %>
-<A href="input.jsp">등록</A>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>WAS</title>
+</head>
+
+<body>
+  <A href="input.jsp">등록</A>
+</body>
+
+</html>
