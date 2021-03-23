@@ -25,10 +25,10 @@ pageEncoding="UTF-8"%>
   <meta charset="UTF-8">
   <title>WAS</title>
 </head>
-
+ 
 <body>
   <br>-------------------------------------------------------------------<br>
-  <h1>Hyunbae HAN's 3-Tier Sample WAS v11</h1>
+  <h1>Hyunbae HAN's 3-Tier Sample WAS v12</h1>
   -------------------------------------------------------------------<br>
   Recent Time : <%= sf.format(nowTime) %>
   <br>-------------------------------------------------------------------<br>
